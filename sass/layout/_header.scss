@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid $color-primary-dark;
+  // margin-bottom: 4rem;
+  box-shadow: 0 1rem 3rem rgba($color-grey-dark, 0.2);
+
+  &__logobox {
+    display: block;
+    position: relative;
+    width: $site-width;
+    text-align: center;
+    padding: 1rem;
+    @include u-center-div;
+
+    &--img {
+      display: inline-block;
+      height: 90px;
+    }
+
+    &--text {
+      text-transform: uppercase;
+      color: $color-primary;
+    }
+  }
+}

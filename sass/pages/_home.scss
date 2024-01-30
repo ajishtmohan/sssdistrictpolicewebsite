@@ -1,0 +1,36 @@
+.mandala {
+  width: $site-width;
+  height: calc(100vh - 200px);
+  @include u-center-div;
+  background-color: rgba($color-grey-light-1, 0.5);
+}
+
+.search_web {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 4rem 0;
+
+  input[type='search'] {
+    text-align: center;
+    width: 60%;
+    height: auto;
+    display: block;
+    padding: 1.5rem 3rem;
+    border-radius: 100px;
+    font-size: inherit;
+    font-family: inherit;
+    border: 2px solid $color-primary;
+    border-box: inherit;
+    outline: 0;
+    @include u-center-div;
+    transition: all 0.2s ease-in;
+
+    &:focus {
+      border: 2px solid $color-primary-dark;
+      outline: 0;
+      box-shadow: 0 1rem 2rem rgba($color-grey-dark, 0.1);
+      transition: all 0.2s ease-in;
+    }
+  }
+}
