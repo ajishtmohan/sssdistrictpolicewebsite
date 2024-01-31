@@ -1,9 +1,8 @@
 .header {
   width: 100%;
-  height: auto;
+  height: 175px;
   display: block;
   border-bottom: 2px solid $color-primary-dark;
-  // margin-bottom: 4rem;
   box-shadow: 0 1rem 3rem rgba($color-grey-dark, 0.2);
 
   &__logobox {
@@ -16,12 +15,16 @@
 
     &--img {
       display: inline-block;
-      height: 90px;
+
+      img {
+        height: 90px;
+      }
     }
 
     &--text {
       text-transform: uppercase;
       color: $color-primary;
+      text-decoration: none;
     }
   }
 }
