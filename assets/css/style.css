@@ -12,7 +12,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   font-size: 1.6rem; }
@@ -38,64 +38,59 @@ body {
 .u-center-div {
   text-align: center; }
 
-.mandala {
+.sectionpolice {
+  width: 100%;
+  height: auto;
   display: block;
-  position: relative;
-  height: auto;
-  margin-top: 175px;
-  margin: 0 auto; }
-  .mandala__name {
-    width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-    background-color: #0cb6c9;
-    margin-bottom: 5rem; }
-    .mandala__name--h2 {
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-      text-transform: uppercase; }
+  position: relative; }
 
-.villagenav {
+.policestations {
   width: 114rem;
-  height: auto;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: center;
-  gap: 5rem;
-  align-items: center;
-  margin: 0 auto; }
-  .villagenav__button {
-    width: calc((100% - 10rem) / 3);
-    height: 8rem;
-    background-color: #0cb6c9;
-    display: block;
+  height: 50rem;
+  margin: 0 auto;
+  padding: 5rem 0; }
+  .policestations .policeflex {
+    width: 114rem;
+    height: auto;
     position: relative;
-    border-radius: 5px;
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.2s ease-in; }
-    .villagenav__button:hover {
-      background-color: #05a6b8;
-      transform: translateY(-0.5rem); }
-    .villagenav__button--text {
-      color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+    gap: 5rem;
+    margin: 0 auto; }
+    .policestations .policeflex__el {
+      width: calc((100% - 10rem) / 3);
+      height: 8rem;
       display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-transform: uppercase; }
+      position: relative;
+      background-color: #0cb6c9;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.2s ease-in; }
+      .policestations .policeflex__el:hover {
+        background-color: #0490a0; }
+      .policestations .policeflex__el--text {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #fff;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-wrap: nowrap; }
 
 .header {
   width: 100%;
-  height: 175px;
+  height: 20rem;
   display: block;
-  border-bottom: 2px solid #05a6b8;
-  box-shadow: 0 1rem 3rem rgba(119, 119, 119, 0.2); }
+  position: relative;
+  padding: 2rem 0;
+  border-bottom: 2px solid #0490a0;
+  box-shadow: 0 1rem 3rem rgba(119, 119, 119, 0.3); }
   .header__logobox {
     display: block;
     position: relative;
@@ -108,73 +103,67 @@ body {
       .header__logobox--img img {
         height: 90px; }
     .header__logobox--text {
+      font-size: 4rem;
       text-transform: uppercase;
+      font-weight: 300;
       color: #0cb6c9;
       text-decoration: none; }
 
-.mandala {
+.section__title {
+  width: 100%;
+  min-height: 8rem;
+  background-color: #0cb6c9;
   display: block;
-  position: relative;
-  width: 114rem;
-  height: calc(100vh - 175px);
-  margin: 0 auto; }
-  .mandala .mandalanav {
+  position: relative; }
+  .section__title--text {
+    font-weight: 300;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: calc(100vh - 175px);
+    transform: translate(-50%, -50%); }
+
+.mandalam {
+  width: 100%;
+  height: calc(100vh - 20rem);
+  display: block;
+  position: relative; }
+  .mandalam .mandalamflex {
+    width: 114rem;
+    height: auto;
+    top: 45%;
+    transform: translateY(-50%);
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
-    gap: 5rem;
     align-items: center;
-    align-content: center; }
-    .mandala .mandalanav__button {
+    justify-content: center;
+    gap: 5rem;
+    margin: 0 auto; }
+    .mandalam .mandalamflex__el {
       width: calc((100% - 10rem) / 3);
-      height: 15rem;
-      background-color: #0cb6c9;
+      height: 12rem;
       display: block;
       position: relative;
-      border-radius: 5px;
-      color: #fff;
+      background-color: #0cb6c9;
       text-decoration: none;
+      border-radius: 4px;
       transition: all 0.2s ease-in; }
-      .mandala .mandalanav__button:hover {
-        background-color: #05a6b8;
-        transform: translateY(-0.5rem); }
-      .mandala .mandalanav__button--text {
+      .mandalam .mandalamflex__el:hover {
+        background-color: #0490a0; }
+      .mandalam .mandalamflex__el--text {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300;
         color: #fff;
         display: block;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-transform: uppercase; }
-
-.search_web {
-  display: block;
-  position: relative;
-  width: 100%;
-  padding: 4rem 0; }
-  .search_web input[type='search'] {
-    text-align: center;
-    width: 60%;
-    height: auto;
-    display: block;
-    padding: 1.5rem 3rem;
-    border-radius: 100px;
-    font-size: inherit;
-    font-family: inherit;
-    border: 2px solid #0cb6c9;
-    border-box: inherit;
-    outline: 0;
-    margin: 0 auto;
-    transition: all 0.2s ease-in; }
-    .search_web input[type='search']:focus {
-      border: 2px solid #05a6b8;
-      outline: 0;
-      box-shadow: 0 1rem 2rem rgba(119, 119, 119, 0.1);
-      transition: all 0.2s ease-in; }
+        text-wrap: nowrap; }

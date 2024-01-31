@@ -1,26 +1,32 @@
-.mandalam {
+.sectionpolice {
   width: 100%;
-  height: calc(100vh - 20rem);
+  height: auto;
   display: block;
   position: relative;
+}
 
-  .mandalamflex {
+.policestations {
+  width: $site-width;
+  height: 50rem;
+  // background-color: $color-grey-light-1;
+  @include u-center-div;
+  padding: 5rem 0;
+
+  .policeflex {
     width: $site-width;
     height: auto;
-    top: 45%;
-    transform: translateY(-50%);
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     gap: 5rem;
     @include u-center-div;
 
     &__el {
       width: calc((100% - 10rem) / 3);
-      height: 12rem;
+      height: 8rem;
       display: block;
       position: relative;
       background-color: $color-primary;
