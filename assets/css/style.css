@@ -49,39 +49,120 @@ body {
   height: 50rem;
   margin: 0 auto;
   padding: 5rem 0; }
-  .policestations .policeflex {
-    width: 114rem;
-    height: auto;
+
+.itemlistingflex {
+  width: 114rem;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: center;
+  gap: 5rem;
+  margin: 0 auto; }
+  .itemlistingflex__el {
+    width: calc((100% - 10rem) / 3);
+    height: 8rem;
+    display: block;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: top;
-    justify-content: center;
-    gap: 5rem;
-    margin: 0 auto; }
-    .policestations .policeflex__el {
-      width: calc((100% - 10rem) / 3);
-      height: 8rem;
+    background-color: #0cb6c9;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease-in; }
+    .itemlistingflex__el:hover {
+      background-color: #0490a0; }
+    .itemlistingflex__el--text {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 300;
+      line-height: 3rem;
+      color: #fff;
       display: block;
-      position: relative;
-      background-color: #0cb6c9;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: all 0.2s ease-in; }
-      .policestations .policeflex__el:hover {
-        background-color: #0490a0; }
-      .policestations .policeflex__el--text {
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 300;
-        color: #fff;
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-wrap: nowrap; }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+.pollingflex {
+  width: 114rem;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: center;
+  gap: 5rem;
+  margin: 0 auto; }
+  .pollingflex__el {
+    width: calc((100% - 10rem) / 3);
+    height: auto;
+    display: block;
+    position: relative;
+    background-color: #f7f7f7f7;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease-in; }
+    .pollingflex__el:hover {
+      background-color: #eee; }
+
+.inactive {
+  background-color: #777 !important; }
+
+.pollingflex {
+  width: 114rem;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: center;
+  gap: 5rem;
+  margin: 0 auto; }
+
+.pollingflexcard {
+  display: block;
+  position: relative;
+  background-color: #f7f7f7f7;
+  color: #777;
+  border-radius: 5px; }
+  .pollingflexcard__number {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    color: #000; }
+  .pollingflexcard__name {
+    background-color: #0cb6c9;
+    padding: 2rem; }
+    .pollingflexcard__name--h3 {
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      font-weight: 200; }
+  .pollingflexcard__voters {
+    padding: 1.5rem 2rem 0 2rem; }
+    .pollingflexcard__voters--name {
+      margin: 1rem 0 0 0;
+      line-height: 1rem; }
+    .pollingflexcard__voters--number {
+      font-size: 2.5rem;
+      padding: 0 0 0.5rem 0; }
+      .pollingflexcard__voters--number:not(:last-child) {
+        border-bottom: 1px solid #777; }
+  .pollingflexcard__critical {
+    width: 100%;
+    height: auto;
+    background-color: #777;
+    border-radius: 0 0 5px 5px; }
+    .pollingflexcard__critical--state {
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      text-transform: uppercase; }
 
 .header {
   width: 100%;
@@ -106,7 +187,8 @@ body {
       font-size: 4rem;
       text-transform: uppercase;
       font-weight: 300;
-      color: #0cb6c9;
+      color: #0cb6c9; }
+    .header__logobox--link {
       text-decoration: none; }
 
 .section__title {
