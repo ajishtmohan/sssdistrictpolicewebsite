@@ -209,6 +209,20 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.section-dropdown {
+  width: 100%;
+  height: calc(100vh - 20rem);
+  display: block;
+  position: relative; }
+
+.form-container {
+  width: 114rem;
+  height: auto;
+  display: block;
+  margin: 0 auto; }
+  .form-container #pollform {
+    width: 10rem; }
+
 .mandalam {
   width: 100%;
   height: calc(100vh - 20rem);

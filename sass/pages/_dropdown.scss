@@ -1,0 +1,18 @@
+.section-dropdown {
+  width: 100%;
+  height: calc(100vh - 20rem);
+  display: block;
+  position: relative;
+}
+
+.form-container {
+  width: $site-width;
+  height: auto;
+  display: block;
+
+  @include u-center-div;
+
+  #pollform {
+    width: 10rem;
+  }
+}
